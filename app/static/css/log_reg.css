@@ -1,0 +1,58 @@
+.icon-container {
+    position: fixed;
+    top: 5.277%;
+    right: 5.36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 230px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.icon-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%; /* это создает круглую форму */
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.01s ease;
+    
+}
+
+.icon-circle:active {
+    background-color: rgb(48, 48, 207);
+}
+
+.login-icon, .register-icon {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-text {
+    color: black;
+    font-family: Laila;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px; /* расстояние между иконкой и текстом */
+}
+
+.divider {
+    height: 80px;
+    border-left: 1px solid black;
+}

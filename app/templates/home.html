@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranslateGPT</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/log_reg.css">
+    <link rel="stylesheet" href="static/css/lang_chooser.css">
+    <link rel="stylesheet" href="static/css/text_area.css">
+</head>
+<body>   
+    <img class="logo" src="static/img/logo.png">
+    <div class="center-text">
+        <p>«TranslateGPT переведет любой короткий текст на выбранный вами язык».</p>
+    </div>
+    <div class="icon-container">
+        <div class="icon-section">
+            <a href="{{ url_for('app.register') }}">
+                <div class="icon-circle">
+                    <img class="login-icon" src="static/img/user-add.png" alt="Login">
+                </div>
+            </a>
+            <div class="icon-text">Login</div>
+        </div>
+        <div class="divider"></div>
+        <div class="icon-section">
+            <a href="{{ url_for('app.register') }}">
+                <div class="icon-circle">
+                    <img class="register-icon" src="static/img/user-add.png" alt="Register">
+                </div>
+            </a>
+            <div class="icon-text">Register</div>
+        </div>
+    </div>
+    <div class="choose_and_info">
+        <div class="lang_chooser">
+            {% include('language_menu.html') %}
+        </div>
+        <p>*Качество перевода зависит от количества материалов, скормленных ChatGPT в процессе обучения на том или ином языке.</p>
+    </div>
+    <div class="translation-container">
+        <textarea id="source-text" placeholder="Введите текст для перевода..."></textarea>
+        <button id="translate-btn">Перевести</button>
+        <textarea id="translated-text" readonly placeholder="Здесь будет перевод..."></textarea>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/lang_chooser.js') }}"></script>
+</body>
+</html>

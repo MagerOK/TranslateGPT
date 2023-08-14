@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ page_title }}</h1>
+            <div class="row">
+                <div class="col-3">
+                <form action="{{ url_for('app.process_register') }}" method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="mb-3">
+                        {{ form.username.label }}
+                        {{ form.username() }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.email.label }}<br>
+                        {{ form.email() }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.password.label }}<br>
+                        {{ form.password() }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.confirm_password.label }}<br>
+                        {{ form.confirm_password() }}
+                    </div>
+                    {{ form.submit() }}
+                </form>
+            </div> 
+         </div>
+        </div>
+</body>
+</html>

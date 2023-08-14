@@ -1,0 +1,13 @@
+
+<select class="form-select-sm" id="language" name="language">
+    <option value="english" {% if request.form['language'] == 'english' %} selected {% endif %}>Английский</option>
+    <option value="czech" {% if request.form['language'] == 'czech' %} selected {% endif %}>Чешский</option>
+    <option value="ukranian" {% if request.form['language'] == 'ukranian' %} selected {% endif %}>Украинский</option>
+    <option value="polish" {% if request.form['language'] == 'polish' %} selected {% endif %}>Польский</option>
+    <option value="slovak" {% if request.form['language'] == 'slovak' %} selected {% endif %}>Словацкий</option>
+    <option value="spanish" {% if request.form['language'] == 'spanish' %} selected {% endif %}>Испанский</option>
+    <option value="french" {% if request.form['language'] == 'french' %} selected {% endif %}>Французский </option>
+    <option value="german" {% if request.form['language'] == 'german' %} selected {% endif %}>Немецкий</option>
+    <option value="japanese" {% if request.form['language'] == 'japanese' %} selected {% endif %}>Японский</option>
+    <option value="russian" {% if request.form['language'] == 'russian' %} selected {% endif %}>Русский</option>
+</select>

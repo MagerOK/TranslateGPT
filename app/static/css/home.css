@@ -1,0 +1,25 @@
+body {
+    background: #212D36;
+    margin: 0;
+}
+
+.logo {
+    position: fixed;
+    top: 6%;
+    left: 4.5%;
+}
+
+.center-text {
+    position: fixed;
+    top: 7%;
+    left: 26.66%;
+    right: 26.666;
+    color: #FFF;
+    font-family: Laila;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+

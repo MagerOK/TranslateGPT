@@ -1,0 +1,39 @@
+.select2-container .select2-selection {
+    background-color: #212D36; /* Цвет фона */
+    
+}
+body .select2-dropdown {
+    background-color: #212D36; /* Или любой другой цвет фона */
+}
+
+body .select2-results__option {
+    color: #FFF;
+}
+
+.select2-container .select2-selection .select2-selection__rendered {
+    color: #FFF;
+}
+
+.select2-container .select2-selection {
+    border: 1px solid #000; /* Черная рамка */
+}
+
+.choose_and_info{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 17.314%;
+    left: 4.166%;
+    
+}
+
+.choose_and_info p {
+    color: rgb(171, 171, 171); 
+    margin-left: 10px; 
+    margin-top: 0;
+}
+
+.lang_chooser {
+    width: 41.67vw; 
+    height: 5.19vh; 
+}

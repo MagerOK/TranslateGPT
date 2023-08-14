@@ -1,0 +1,29 @@
+.translation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    resize: vertical; /* позволяет пользователю изменять размер только по вертикали */
+}
+
+button#translate-btn {
+    background-color: #212D36;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#translate-btn:hover {
+    background-color: #1a232a;
+}
