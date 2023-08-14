@@ -17,5 +17,6 @@ To set up and activate a virtual environment, execute the following commands:
 #### SECRET_KEY = 'YOUR_SECRET_KEY_STRING' # could be any string
 ### 3. Dependencies Installation:
 pip install -r requirements.txt
-Navigate to the app folder and create a file named config.py.
-Inside config.py, add the following:
+ ### 4. Project Launch:
+type in console:
+#### run
